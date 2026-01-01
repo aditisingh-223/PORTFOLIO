@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ADITI SINGH | Portfolio</title>
+<style>
+* { box-sizing: border-box; margin:0; padding:0; }
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #e0e0e0;
+}
+
+/* Header */
+header {
+    background: rgba(0,0,0,0.9);
+    color: #00ffea;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid #00ffea;
+}
+
+/* Welcome container */
+.welcome-container {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.welcome {
+    font-size: 36px;
+    font-weight: bold;
+    color: #00ffea;
+    border-right: 4px solid #00ffea;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
+    display: inline-block;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #00ffea; }
+}
+
+/* Sections */
+section {
+    background-color: rgba(0,0,0,0.85);
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 900px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 234, 0.5);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+    border-left: 6px solid #00ffea;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Profile */
+.profile { text-align: center; }
+.profile img {
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    border: 5px solid #00ffea;
+    object-fit: cover;
+    box-shadow: 0 0 20px #00ffea;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.profile img:hover { transform: scale(1.1); box-shadow: 0 0 30px #00ffea; }
+
+h2 { color: #00ffea; border-bottom: 2px solid #00ffea; padding-bottom: 6px; }
+
+/* Skills */
+.skills-box { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 15px; }
+.skill {
+    background: rgba(0,0,0,0.6);
+    padding: 12px 18px;
+    border-radius: 8px;
+    border-left: 5px solid #00ffea;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.skill:hover { background: #00ffea; color: #000; box-shadow: 0 0 12px #00ffea; transform: scale(1.05); }
+
+/* Certificates */
+.certificates { display: flex; gap: 20px; flex-wrap: wrap; }
+.cert-card {
+    flex: 1; min-width: 250px;
+    background: rgba(0,0,0,0.7); padding: 18px; border-radius: 10px;
+    border-left: 6px solid #00ffea; transition: all 0.3s ease;
+}
+.cert-card:hover { transform: scale(1.03); box-shadow: 0 0 15px #00ffea; }
+.cert-card h3 { color: #00ffea; }
+.cert-card a {
+    text-decoration: none; color: #000; background-color: #00ffea; padding: 8px 14px;
+    border-radius: 6px; display: inline-block; margin-top: 10px; font-weight: bold;
+}
+
+/* Social Media */
+.social-media { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.social-card {
+    background: rgba(0,0,0,0.7); padding: 20px; border-radius: 10px; border-left: 6px solid #00ffea;
+    min-width: 220px; text-align: center; transition: all 0.3s ease;
+}
+.social-card:hover { transform: translateY(-5px); box-shadow: 0 0 15px #00ffea; }
+.social-card a { color: #00ffea; text-decoration: none; font-weight: bold; }
+
+/* Contact */
+.contact form { max-width: 400px; margin: auto; }
+.contact input, .contact textarea { width: 100%; padding: 10px; margin-top: 8px; border-radius: 6px; border: none; }
+.contact button { width: 100%; padding: 12px; background-color: #00ffea; color: #000;
+border: none; border-radius: 6px; font-size: 16px; cursor: pointer; margin-top: 12px; font-weight: bold; }
+
+footer { background: rgba(0,0,0,0.9); color: #00ffea; text-align: center; padding: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>ADITI SINGH </h1>
+    <p>B.Tech 1st Semester | CSE (Core)</p>
+</header>
+
+<!-- Welcome -->
+<div class="welcome-container">
+    <div class="welcome">Welcome to My Portfolio 🚀</div>
+</div>
+
+<!-- Sections -->
+<section class="profile">
+    <img src="C:\OneDrive\Desktop\Aditi1\photo.jpeg" alt="My Photo">
+    <h2>About Me</h2>
+    <p>I am a B.Tech 1st semester student in CSE (Core), passionate about programming and web development. I enjoy creating responsive websites and learning C, HTML, CSS, and JavaScript.</p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills-box">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript (Learning)</div>
+        <div class="skill">C Programming</div>
+    </div>
+</section>
+
+<section>
+    <h2>Certificates</h2>
+    <div class="certificates">
+        <div class="cert-card">
+            <h3>C Programming Certificate</h3>
+            <a href="C:\Users\arbin\OneDrive\Documents\One Drive\OneDrive\Desktop\Aditi1\certificate.c.jpeg" target="_blank">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <h3>Web Development Certificate</h3>
+            <a href="C:\Users\arbin\OneDrive\Documents\One Drive\OneDrive\Desktop\Aditi1\WhatsApp Image 2025-12-31 at 12.34.53 PM.jpeg" target="_blank">View Certificate</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Social Media</h2>
+    <div class="social-media">
+        <div class="social-card">
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/aditi-singh-b037b8390" target="_blank">Visit Profile</a>
+        </div>
+        <div class="social-card">
+            <h3>GitHub</h3>
+            <a href="https://github.com/aditisingh-223" target="_blank">Visit Profile</a>
+        </div>
+        <div class="social-card">
+            <h3>Instagram</h3>
+            <a href="instagram.link" target="_blank">Visit Profile</a>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>©️ 2025 ADITI SINGH</footer>
+
+<script>
+const sections = document.querySelectorAll('section');
+const welcome = document.querySelector('.welcome-container');
+
+// After typing animation, keep welcome on top and show sections
+setTimeout(() => {
+    welcome.style.position = 'relative'; // stop fixed, stay on page
+    welcome.style.top = '0';
+    welcome.style.transform = 'none';
+    
+    sections.forEach((sec, index) => {
+        setTimeout(() => sec.classList.add('visible'), index * 500);
+    });
+}, 3500); // matches typing animation
+</script>
+
+</body>
+</html>
